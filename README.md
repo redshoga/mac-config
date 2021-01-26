@@ -113,6 +113,7 @@ git config --global user.email "yui.ichioka.contact@gmail.com"
 ```
 ssh-keygen -t ed25519 -C "yui.ichioka.contact@gmail.com"
 cat ~/.ssh/id_ed25519.pub
+ssh-add ~/.ssh/id_ed25519
 ```
 
 99. その他アプリ
