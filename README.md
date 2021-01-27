@@ -75,8 +75,17 @@ git config --global user.email "yui.ichioka.contact@gmail.com"
 ```
 ssh-keygen -t ed25519 -C "yui.ichioka.contact@gmail.com"
 cat ~/.ssh/id_ed25519.pub
+```
+
+以下に公開鍵の内容を登録
+
+https://github.com/settings/keys
+
+```
 ssh-add ~/.ssh/id_ed25519
 ```
+
+で、毎回パスフレーズを入力しなくてもよいように
 
 11. Karabinerの設定
 
