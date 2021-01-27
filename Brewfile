@@ -14,12 +14,14 @@ cask 'spotify'
 cask 'figma'
 cask 'docker'
 cask 'spectacle'
+cask 'karabiner-elements'
 
 tap 'homebrew/cask-drivers'
 cask 'logitech-options'
 
 mas 'LINE', id: 539883307
 mas 'GIPHY', id: 668208984
+mas 'Display Menu', id: 549083868
 
 # Zsh
 brew 'zsh-completions'

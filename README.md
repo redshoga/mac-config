@@ -78,6 +78,12 @@ cat ~/.ssh/id_ed25519.pub
 ssh-add ~/.ssh/id_ed25519
 ```
 
+11. Karabinerの設定
+
+```
+ln -sf ~/Documents/workspace/mac-config/karabiner.json ~/.config/karabiner/karabiner.json
+```
+
 99. その他アプリ
 
 - Studio One 5
