@@ -133,6 +133,18 @@
         "options": {
           "full_name": "logitech-options"
         }
+      },
+      "clipy": {
+        "version": "1.2.1",
+        "options": {
+          "full_name": "clipy"
+        }
+      },
+      "spectacle": {
+        "version": "1.2,672",
+        "options": {
+          "full_name": "spectacle"
+        }
       }
     },
     "mas": {

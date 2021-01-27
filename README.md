@@ -97,13 +97,11 @@ TODO
 
 9. Alfredの設定
 
-TODO
+Features -> Web Bookmarks
 
-10. SSHまわりの設定
+- [x] Google Chrome Bookmarks
 
-TODO
-
-11. Gitまわりの設定
+10. Gitまわりの設定
 
 ```
 git config --global user.name "redshoga"
@@ -122,4 +120,3 @@ ssh-add ~/.ssh/id_ed25519
 
 # TODO
 - [ ] dotfilesの用意
-- [ ] VSCodeのフォント設定
