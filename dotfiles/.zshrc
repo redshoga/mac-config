@@ -20,7 +20,9 @@ USER=``
 # Alias
 alias y='yarn' 
 alias cdw='cd ~/Documents/workspace' 
+alias ow='open ~/Documents/workspace'
 alias cdd='cd ~/Desktop' 
+alias od='open ~/Desktop' 
 alias reload='exec $SHELL -l'
 
 # Functions

@@ -82,7 +82,7 @@ cat ~/.ssh/id_ed25519.pub
 https://github.com/settings/keys
 
 ```
-ssh-add ~/.ssh/id_ed25519
+ssh-add -K ~/.ssh/id_ed25519
 ```
 
 で、毎回パスフレーズを入力しなくてもよいように

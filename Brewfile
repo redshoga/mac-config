@@ -1,5 +1,6 @@
 brew 'mas'
 brew 'nvm'
+brew 'tree'
 
 cask 'clipy'
 cask 'google-chrome'
