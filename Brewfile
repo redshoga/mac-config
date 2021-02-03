@@ -16,6 +16,7 @@ cask 'figma'
 cask 'docker'
 cask 'spectacle'
 cask 'karabiner-elements'
+cask 'virtualbox'
 
 tap 'homebrew/cask-drivers'
 cask 'logitech-options'

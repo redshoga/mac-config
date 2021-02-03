@@ -184,12 +184,18 @@
         "options": {
           "full_name": "karabiner-elements"
         }
+      },
+      "virtualbox": {
+        "version": "6.1.18,142142",
+        "options": {
+          "full_name": "virtualbox"
+        }
       }
     },
     "mas": {
       "LINE": {
         "id": "539883307",
-        "version": "6.5.4"
+        "version": "6.6.0"
       },
       "GIPHY": null,
       "Display Menu": {
