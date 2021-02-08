@@ -25,6 +25,7 @@ mas 'LINE', id: 539883307
 mas 'GIPHY', id: 668208984
 mas 'Display Menu', id: 549083868
 mas 'Helium', id: 1054607607
+mas 'The Unarchive‪r', id: 425424353
 
 # Zsh
 brew 'zsh-completions'
