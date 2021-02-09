@@ -17,6 +17,8 @@ cask 'docker'
 cask 'spectacle'
 cask 'karabiner-elements'
 cask 'virtualbox'
+cask 'android-file-transfer'
+cask 'adobe-acrobat-reader'
 
 tap 'homebrew/cask-drivers'
 cask 'logitech-options'
