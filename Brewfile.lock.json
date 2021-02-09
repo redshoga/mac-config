@@ -196,6 +196,12 @@
         "options": {
           "full_name": "android-file-transfer"
         }
+      },
+      "adobe-acrobat-reader": {
+        "version": "20.013.20074",
+        "options": {
+          "full_name": "adobe-acrobat-reader"
+        }
       }
     },
     "mas": {
