@@ -1,98 +1,88 @@
 # mac-config
 
-1. App Storeにサインイン
+- App Storeにサインイン
 
-2. Homebrewのインストール
+- Homebrewのインストール (https://brew.sh/index_ja)
 
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
+- アプリのインストール (`brew bundle`)
 
-3. アプリのインストール
+- キーボードの設定
+  - `システム環境設定` → `キーボード` → `入力ソース`に`ひらがな (Google)`, 
+  `英数 (Google)`を追加
+  - Karabiner-Elementsの設定
+    ```
+    PCキーボードの無変換キー: 英数キー
+    PCキーボードの変換キー: かなキー
+    left_command: left_option
+    left_control: left_command
+    left_option: left_control
+    ```
 
-```
-brew bundle
-```
+- Alfredの設定
+  - `Features` → `Web Bookmarks`の`Google Chrome Bookmarks`にチェック
 
-4. システム環境設定の設定
-5. iTerm2のGeneral->Preferencesより設定ディレクトリを指定
+- Logicool G HUB
+  - https://gaming.logicool.co.jp/ja-jp/innovation/g-hub.html
+  - 設定
+    ```
+    DPI: 1000
+    ```
 
+- git
+  - 基本設定
+    ```
+    git config --global user.name "redshoga"
+    git config --global user.email "yui.ichioka.contact@gmail.com"
+    ```
+  - 鍵設定
+    ```
+    ssh-keygen -t ed25519 -C "yui.ichioka.contact@gmail.com"
+    cat ~/.ssh/id_ed25519.pub
+    ```
 
-6. Nodeのインストール
+    公開鍵の内容を登録 (https://github.com/settings/keys)
 
-```
-mkdir ~/.nvm
-code ~/.zprofile
-```
+- Node
+  ```
+  mkdir ~/.nvm
+  code ~/.zprofile
+  ```
 
-```
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-```
+  ```
+  export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
+  ```
 
-```
-source ~/.zprofile
-```
+  ```
+  source ~/.zprofile
+  ```
 
-```
-nvm install v12.20.1
-nvm alias default v12.20.1
-npm install -g yarn
-```
+  ```
+  nvm install v12.20.1
+  nvm alias default v12.20.1
+  npm install -g yarn
+  ```
 
-7. Zsh, Oh My Zshの設定
+- Zsh, Oh My Zshの設定
+  - フォントを移動 (インストールディレクトリに注意)
+    ```
+    cp -f /opt/homebrew/Cellar/ricty/4.1.1/share/fonts/Ricty*.ttf ~/Library/Fonts/ 
+    fc-cache -vf
+    ```
 
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+  - `.zshrc`にエイリアスを貼る
+    ```
+    ln -sf ~/Documents/workspace/mac-config/config-files/zsh/.zshrc ~/.zshrc
+    ```
 
-```
-cp -f /usr/local/Cellar/ricty/4.1.1/share/fonts/Ricty*.ttf ~/Library/Fonts/ 
-fc-cache -vf
-```
+  - Oh My Zshのインストール
+    ```
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
 
-```
-ln -sf ~/Documents/workspace/mac-config/dotfiles/.zshrc ~/.zshrc
-```
+- iTerm2
+  - `General`→`Preferences`より設定ディレクトリを指定
 
-8. Logi Optionsの設定
+- その他アプリ
 
-TODO
-
-9. Alfredの設定
-
-Features -> Web Bookmarks
-
-- [x] Google Chrome Bookmarks
-
-10. Gitまわりの設定
-
-```
-git config --global user.name "redshoga"
-git config --global user.email "yui.ichioka.contact@gmail.com"
-```
-
-```
-ssh-keygen -t ed25519 -C "yui.ichioka.contact@gmail.com"
-cat ~/.ssh/id_ed25519.pub
-```
-
-以下に公開鍵の内容を登録
-
-https://github.com/settings/keys
-
-```
-ssh-add -K ~/.ssh/id_ed25519
-```
-
-で、毎回パスフレーズを入力しなくてもよいように
-
-11. Karabinerの設定
-
-```
-ln -sf ~/Documents/workspace/mac-config/karabiner.json ~/.config/karabiner/karabiner.json
-```
-
-99. その他アプリ
-
-- Studio One 5
+  - Studio One 5

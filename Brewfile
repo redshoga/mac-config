@@ -2,7 +2,6 @@ brew 'mas'
 brew 'nvm'
 brew 'tree'
 brew 'awscli'
-
 cask 'clipy'
 cask 'google-chrome'
 cask 'visual-studio-code'
@@ -14,16 +13,12 @@ cask 'slack'
 cask 'iterm2'
 cask 'spotify'
 cask 'figma'
-cask 'docker'
-cask 'spectacle'
 cask 'karabiner-elements'
-cask 'virtualbox'
-cask 'android-file-transfer'
 cask 'adobe-acrobat-reader'
+# cask 'virtualbox'
+# cask 'docker'
 
-tap 'homebrew/cask-drivers'
-cask 'logitech-options'
-
+# App Store
 mas 'LINE', id: 539883307
 mas 'GIPHY', id: 668208984
 mas 'Display Menu', id: 549083868
@@ -32,7 +27,8 @@ mas 'The Unarchive‪r', id: 425424353
 
 # Zsh
 brew 'zsh-completions'
-tap 'sanemat/font'
-brew 'sanemat/font/ricty', args: ['with-powerline']
 brew 'zsh-syntax-highlighting'
-brew 'zsh-completions'
+
+# Font
+tap 'sanemat/font'
+brew 'ricty', args: ['with-powerline']
