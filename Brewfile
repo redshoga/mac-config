@@ -15,6 +15,7 @@ cask 'spotify'
 cask 'figma'
 cask 'karabiner-elements'
 cask 'adobe-acrobat-reader'
+cask 'android-file-transfer'
 # cask 'virtualbox'
 # cask 'docker'
 

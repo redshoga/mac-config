@@ -3,6 +3,7 @@
 - App Storeにサインイン
 
 - Homebrewのインストール (https://brew.sh/index_ja)
+  - `brew --prefix` がインストール先を返してくれる
 
 - アプリのインストール (`brew bundle`)
 

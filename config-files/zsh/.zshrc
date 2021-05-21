@@ -1,9 +1,9 @@
 # Zsh, Oh My Zsh
 ## zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## zsh-completions
-fpath=(/usr/local/Cellar/zsh-completions/0.32.0/share/zsh-completions $fpath)
+fpath=(/opt/homebrew/Cellar/zsh-completions/0.33.0/share/zsh-completions $fpath)
 autoload -U compinit && compinit -u
 
 # Custom default .zshrc
