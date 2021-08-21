@@ -22,12 +22,7 @@
 - Alfredの設定
   - `Features` → `Web Bookmarks`の`Google Chrome Bookmarks`にチェック
 
-- Logicool G HUB
-  - https://gaming.logicool.co.jp/ja-jp/innovation/g-hub.html
-  - 設定
-    ```
-    DPI: 1000
-    ```
+- Logi Options
 
 - git
   - 基本設定

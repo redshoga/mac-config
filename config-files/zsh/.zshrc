@@ -2,9 +2,7 @@
 ## zsh-syntax-highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-## zsh-completions
-fpath=(/opt/homebrew/Cellar/zsh-completions/0.33.0/share/zsh-completions $fpath)
-autoload -U compinit && compinit -u
+export PATH=~/.yarn/bin:$PATH
 
 # Custom default .zshrc
 export ZSH="/Users/redshoga/.oh-my-zsh"
@@ -20,3 +18,5 @@ alias reload='exec $SHELL -l'
 # Functions
 ## https://qiita.com/redshoga/items/f80cf7a94ebfead5e42f
 killport () { kill `lsof -ti tcp:$1` }
+
+export AWS_SDK_LOAD_CONFIG=1

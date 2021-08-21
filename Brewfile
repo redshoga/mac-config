@@ -27,7 +27,6 @@ mas 'Helium', id: 1054607607
 mas 'The Unarchive‪r', id: 425424353
 
 # Zsh
-brew 'zsh-completions'
 brew 'zsh-syntax-highlighting'
 
 # Font
